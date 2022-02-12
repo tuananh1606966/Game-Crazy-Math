@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#303e4e">
+    <ImageView
+        android:id="@+id/iv_play"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:src="@drawable/ic_playbutton"/>
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/iv_play"
+        android:text="Crazy Math"
+        android:textSize="56sp"
+        android:textColor="#72fbfa"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="64dp"/>
+    <TextView
+        android:id="@+id/tv_banduoc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Bạn được:"
+        android:visibility="invisible"
+        android:textSize="32sp"
+        android:textColor="#72fbfa"
+        android:layout_below="@id/iv_play"
+        android:layout_alignLeft="@id/tv_title"
+        android:layout_marginTop="64dp"/>
+    <TextView
+        android:id="@+id/tv_last_score"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="32sp"
+        android:textColor="#72fbfa"
+        android:visibility="invisible"
+        android:text="0"
+        android:layout_alignBottom="@id/tv_banduoc"
+        android:layout_toRightOf="@id/tv_banduoc"
+        android:layout_marginLeft="24dp"/>
+    <TextView
+        android:id="@+id/tv_diem"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="điểm"
+        android:visibility="invisible"
+        android:textSize="32sp"
+        android:textColor="#72fbfa"
+        android:layout_alignBottom="@id/tv_banduoc"
+        android:layout_toRightOf="@id/tv_last_score"
+        android:layout_marginLeft="12dp"/>
+
+
+</RelativeLayout>
